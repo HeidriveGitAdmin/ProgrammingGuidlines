@@ -31,17 +31,19 @@
 
 1. **Variablen**
    - Verwende aussagekräftige und eindeutige Namen.
-   - Nutze CamelCase für Variablennamen (z.B. `motorSpeed`, `temperatureSensor`).
+   - Nutze CamelCase für Variablennamen (z.B. `actualVelocity`, `targetTorque`).
 
 2. **Konstanten**
    - Schreibe Konstanten in Großbuchstaben und trenne Wörter mit Unterstrichen (z.B. `MAX_SPEED`, `TEMPERATURE_THRESHOLD`).
 
 3. **Funktionen und Funktionsbausteine**
-   - Benenne Funktionen und Funktionsbausteine mit aussagekräftigen Namen.
-   - Nutze CamelCase für Funktionsnamen (z.B. `CalculateSpeed`, `ReadSensorData`).
+   - Benenne Funktionen und Funktionsbausteine mit aussagekräftigen Namen und `FB_` .
+   - Nutze CamelCase für Funktionsnamen (z.B. `FB_DriveControl`, `FB_SdoReadWrite`).
+   - Intanziierte Funktionsblöcke mit `fb_` (z.B. `fb_DriveControl`, `fb_SdoReadWrite`).
 
 4. **Programme**
    - Programme sollten klar benannt sein und ihren Zweck widerspiegeln (z.B. `MainControlProgram`, `SafetyCheckProgram`).
 
 5. **Datenstrukturen**
    - Benenne Strukturen so, dass ihr Inhalt klar wird (z.B. `MotorParameters`, `SensorData`).
+   - Enums (z.B. `E_OpModes`, `E_DriveStates`).
